@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin:10px; 
+  padding:10px;
+  }
+* {
+  
+}
+ #listData{
+  gap:10px;  
+  background-color:lightgray;
+  display:flex;
+  flex-direction:column;
+  margin:10px;  
+  padding:5px; 
+  font-size:1.1rem 
+}
+.list{
+  margin:18px 10px 10px 10px;
+  background-color:lightgray;
+  display:flex;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+ background-color:lightgray;
+ width:50%;
+ margin:auto;
+ border-radius:10px; 
+}
+li{
+  list-style:none;
+  border:solid white 1px;
+  padding:3px;
+}
+button{
+ background-color:#4facfe ; 
+ border-radius:90px;
+ border:2px solid white ;
+ color:#ffffff; 
+}
+button:hover{
+ background-color:white; 
+ color:#333; 
+}
+.addbtn{
+  margin:5px;
+ }
+
+#listData li{
+ display:flex; 
+ gap:8px;
+ 
+}
+#listData li button:nth-of-type(1){
+ margin-left:auto; 
+ font-size:1rem;
+}
+.remit-box{
+ margin-left:auto;
+}
+.remitbtn{
+ padding:4px 
+}
+.important{
+ color:#d35400; 
+ }
+.urgent{
+  color:red;
+  }
+#add{
+ border-radius:6px;
+ outline:none;
+ border:1px; 
+}
+#urgencySet{
+ border-radius:6px;
+ outline:none;
+ border:1px;  
+ margin-right:5px; 
+ margin-left:5px; 
+}
+#add.important{
+ background-color: #fdf2e9;
+}
+#add.urgent{
+ background-color:#fdedec; 
+}
