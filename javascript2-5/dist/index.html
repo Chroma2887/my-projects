@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript 系列二：第5課</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class=main>
+<div class=list>
+<input id="add" type="text" placeholder="請輸入您的計畫">
+<select id="urgencySet" onchange="inputColor()">
+  <option value="normal">一般</option>
+  <option value="important">重要</option>
+  <option value="urgent">緊急</option>
+ </select> 
+<button class="addbtn" onclick="run_add()">+</button>
+<span class="remit-box"><button class="remitbtn"onclick="run_remit()">匯出</button>
+  </span>
+</div>
+<div>
+<ul id="listData">
+  <li>
+    <span>倒垃圾</span>
+    <button onclick="run_del(event)">X</button>
+  </li>
+  <li>
+    <span>繳電話費</span>
+    <button onclick="run_del(event)">X</button>
+  </li>
+  <li>
+    <span>採買本週食材</span>
+    <button onclick="run_del(event)">X</button>
+  </li>
+</ul>
+</div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
