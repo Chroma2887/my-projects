@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin:10px; 
+  padding:10px;
+  }
+* {
+  
+}
+ #listData{
+  gap:8px;  
+  background-color:lightgray;
+  display:flex;
+  flex-direction:column;
+  margin:10px;  
+  padding:0px; 
+   
+}
+.list{
+  margin:18px 10px 10px 10px;
+  background-color:lightgray;
+  display:flex;
+}
+.main{
+ background-color:lightgray;
+ width:50%;
+ margin:auto;
+ border-radius:10px; 
+}
+li{
+  list-style:none;
+  border:solid white 1px;
+  padding:3px;
+}
+button{
+ background-color:#4facfe ; 
+ border-radius:90px;
+ border:2px solid white ;
+ color:#ffffff; 
+}
+button:hover{
+ background-color:white; 
+ color:#333; 
+}
+.addbtn{
+  margin:5px;
+ 
+}
+#listData li{
+ display:flex; 
+}
+#listData li button{
+ margin-left:auto; 
+}
+.remit-box{
+ margin-left:auto;
+}
+.remitbtn{
+ padding:4px 
+}
