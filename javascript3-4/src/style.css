@@ -1,0 +1,93 @@
+body{
+ display:flex;
+ padding:10px;
+ font-family:sans-serif;
+ justify-content: center;
+}
+.main{
+ display:flex;
+ flex-direction:column; 
+ justify-content:center;
+ align-items:center;
+ min-height: 100vh; 
+ background-color:#FAF4FF;
+ width:30% 
+}
+.input-group{
+ margin-bottom:10px;
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+}
+.input-group label,
+.input-group input{
+  display:block;
+  width:100%;
+  max-width:150px;
+  margin-bottom:5px;
+  
+}
+.error-msg{
+  color:red;
+  font-size:14px;
+  margin-top:5px;
+  visibility: hidden;
+  
+}
+.enter-in {
+  width: 220px;          
+  padding: 5px 12px;    
+  border: 1px solid #ccc;
+  border-radius: 6px;  
+  font-size: 14px;
+  margin-top: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+.enter-in:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.3);
+}
+button{
+  padding:10px 25px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+  transition:0.2s;
+  
+}
+.msg-button{
+  background-color:	#D3A4FF;
+ }
+.msg-button:hover{
+ opacity:0.85;
+ transition:0.2s; 
+}
+.error-msg.show{
+ visibility: visible;
+}
+.mdl-background{
+  display:none;
+  position:fixed;
+  top:0 ; left:0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.mdl-body{
+ background-color:white;
+ width:30%;  
+ max-width:600px; 
+ display:flex; 
+ flex-direction:column;
+ align-items:center;
+ gap:15px;
+ padding:15px; 
+ border-radius:15px;
+  
+}
+.mdl-background.show{
+  display:flex;
+}

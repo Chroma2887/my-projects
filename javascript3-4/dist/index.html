@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript 系列三：練習4</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="main">
+<div class="input-group">
+ <label>用戶暱稱:</label>
+ <input type="text" class="nickname enter-in">
+ <div class="error-msg nickname-error"> 
+  暱稱不能為空，且不能超過 40 個字
+ </div>  
+</div>
+<div class="input-group">
+ <label>電子郵件:</label>
+ <input type="email" class="enter-email enter-in">   
+ <div class="error-msg email-error">
+  Email 不能為空，且必須包含 @
+ </div>
+</div>  
+<div class="input-group">
+ <label>密碼:</label>
+ <input type="password" class="enter-password enter-in">
+ <div class="error-msg password-error">
+  密碼不能為空白、必須在8字以上、必須在100字以內
+ </div>  
+</div>
+<button class="msg-button btn">註冊</button>
+</div>
+<div class="ok-mdl mdl-background " >
+  <div class="mdl-body">
+    <h2>註冊成功</h2>
+    <button class="close-btn btn">關閉</button>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
