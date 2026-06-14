@@ -1,0 +1,61 @@
+.faq {
+  max-width: 600px;         /* 限制最大寬度，在電腦上看才不會太寬 */
+  margin: 40px auto;        /* 上下留白，左右自動置中 */
+  }
+.faq-item {
+  background-color: #ffffff;
+  border-radius: 8px;  
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+  overflow: hidden;         /* 確保裡面的流暢動畫不會超出圓角外框 */
+}
+.faq-q {
+  display: flex;           
+  justify-content: space-between; /* 關鍵：讓文字靠左、＋號靠最右 */
+  align-items: center;   
+  padding: 5px 5px;    
+  cursor: pointer;    
+  user-select: none;        /* 防止使用者連續狂點時反白文字 */
+  transition: background-color 0.2s ease; /* 換色時有微緩衝 */
+  background-color: #ffffff;
+  font-weight: 500;
+  color: #333333;
+}
+.faq-q:hover {
+  background-color: #f7f9fa;
+}
+.faq-a{
+max-height: 0;            /* 預設高度為 0（隱藏） */
+overflow: hidden;         /* 超出範圍的字隱藏 */
+background-color: #fafbfc;
+transition: max-height 0.3s ease-out; /* 高度縮放的滑動流暢感 */  
+}
+.faq-a.show{
+max-height: 150px;
+}
+.faq-a span {
+  display: block;
+  padding: 5px 5px;       
+  color: #666666;
+  line-height: 1.6;         
+  font-size: 0.95rem;
+  border-top: 1px solid #f0f0f0; /* 答案與問題之間加一條微弱的分隔線 */
+}
+.faq-q span:last-child {
+  display: inline-block;
+  transition: transform 0.3s ease; /* 旋轉時有 0.3 秒的緩衝 */
+}
+/*  用has可以來判斷子層的狀況進而改變父層的樣式 */
+.faq-item:has(.faq-a.show) .faq-q {
+  background-color: #cafff4;
+  color: #005c4b;            
+}
+.faq-item:has(.faq-a.show) {
+  border-color: #4fbe84;
+  box-shadow: 0 4px 12px rgba(79, 190, 132, 0.15);
+}
+.faq-item:has(.faq-a.show) .faq-q span:last-child {
+  transform: rotate(45deg);
+  color: #ff5b5b;            /* 變成 ╳ 號時順便換成醒目的紅色 */
+}
